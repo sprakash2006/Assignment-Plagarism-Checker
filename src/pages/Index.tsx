@@ -8,6 +8,7 @@ import { createClusters, createGraphData } from '@/utils/clustering';
 import { SimilarityResult, Cluster, GraphNode, GraphEdge } from '@/types/plagiarism';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import ThemeToggle from '@/components/ThemeToggle';
 import { BookOpen, TrendingUp, Network } from 'lucide-react';
 import { toast } from 'sonner';
 
@@ -102,10 +103,13 @@ const Index = () => {
                 Advanced DSA-powered assignment analysis
               </p>
             </div>
-            <Badge variant="outline" className="text-lg px-4 py-2">
-              <Network className="w-4 h-4 mr-2" />
-              C++ DSA Concepts in TypeScript
-            </Badge>
+            <div className="flex items-center gap-4">
+              <Badge variant="outline" className="text-lg px-4 py-2">
+                <Network className="w-4 h-4 mr-2" />
+                C++ DSA Concepts in TypeScript
+              </Badge>
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       </header>
